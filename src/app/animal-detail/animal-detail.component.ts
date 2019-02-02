@@ -12,8 +12,8 @@ export class AnimalDetailComponent implements OnInit {
 	food: string;
         constructor(private animalService: AnimalService) {}
 	ngOnInit() {
-		this.name = this.animalService.name;
-		this.food = this.animalService.food;
+		this.name = this.animalService.getName();
+		this.food = this.animalService.getFood();
 	}
 
 }
